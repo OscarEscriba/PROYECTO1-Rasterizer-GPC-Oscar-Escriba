@@ -59,24 +59,6 @@ def RotationMatrix(pitch, yaw, roll):
 	pitch *= pi/180
 	yaw *= pi/180
 	roll *= pi/180
-	
-	# Creamos la matriz de rotaci�n para cada eje.
-	pitchMat = np.matrix([[1,0,0,0],
-						  [0,cos(pitch),-sin(pitch),0],
-						  [0,sin(pitch),cos(pitch),0],
-						  [0,0,0,1]])
-	
-	yawMat = np.matrix([[cos(yaw),0,sin(yaw),0],
-						[0,1,0,0],
-						[-sin(yaw),0,cos(yaw),0],
-						[0,0,0,1]])
-	
-	rollMat = np.matrix([[cos(roll),-sin(roll),0,0],
-						 [sin(roll),cos(roll),0,0],
-						 [0,0,1,0],
-						 [0,0,0,1]])
-	
-	return pitchMat * yawMat * rollMat
 
 #also it allows me to set the size of the matrix 
 def createMatrix(row, column, List):
