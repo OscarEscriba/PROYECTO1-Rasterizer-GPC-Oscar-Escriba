@@ -37,7 +37,7 @@ rend.glLoadModel("models/Couch.obj",
 rend.active_shader = s.degraded
 rend.active_texture = Texture("textures/TexturaPlanta.bmp")
 rend.glLoadModel("models/planta.obj",
-                 translate = V3(-0.5,1,-1),
+                 translate = V3(-1,4.6,-1),
                  rotate = V3(-15, -130, 30),
                  scale = V3(0.25, 0.25, 0.25))
 
@@ -52,10 +52,10 @@ rend.glLoadModel("models/globes.obj",
 #imagen4 la planta.
 rend.active_shader = s.zebra
 rend.active_texture = Texture("textures/model.bmp")
-rend.glLoadModel("models/model.obj",
-                 translate = V3(4,2,1),
-                 rotate = V3(-15, -130, 30),
-                 scale = V3(0.25, 0.25, 0.25))
+rend.glLoadModel("models/Chair.obj",
+                  translate = V3(1, 5, -0.3),
+                  rotate = V3(-15, 180, 30),
+                  scale = V3(0.4, 0.4, 0.4))
 
 
 rend.glFinish("output.bmp")
